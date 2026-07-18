@@ -44,7 +44,7 @@ This lack of centralization leads to:
 ---
 
 ## GitHub Repo Link of the Project
-[Link of the GitHub Repository](https://github.com/aswind/student360)
+https://github.com/aswin454/gema.git
 
 ---
 
