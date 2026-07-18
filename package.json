@@ -1,0 +1,29 @@
+{
+  "name": "campusone-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Unified Student Services Hub for Modern Universities",
+  "main": "server.js",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix client && npm install --prefix backend",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "seed": "node backend/config/seedData.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.4",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "author": "CampusOne AI Team",
+  "license": "MIT"
+}
